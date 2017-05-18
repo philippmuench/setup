@@ -1,2 +1,5 @@
-# setup
-laptop setup
+# laptop setup
+
+```
+./setup.sh
+```

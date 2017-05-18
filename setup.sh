@@ -33,3 +33,13 @@ mv zshrc ~/.zshrc \
 
 gem install github
 source ~/.zshrc
+
+# R
+sudo apt-get install -y --force-yes r-base-core 
+sudo apt-get install -y libjpeg62
+sudo apt-get -f install
+
+# Rstudio (needs libjpeg62)
+wget https://download1.rstudio.org/rstudio-1.0.143-amd64.deb \
+ && sudo dpkg -i rstudio-1.0.143-amd64.deb \
+ && rm rstudio-1.0.143-amd64.deb
