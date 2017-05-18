@@ -21,5 +21,15 @@ git config --global credential.helper 'cache --timeout=86400'
 
 echo "setting up zsh"
 
-# install
+install zsh
+sudo apt-get install -y --force-yes zsh
+
+# install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# move zshrc to home
+mv zshrc ~/.zshrc \
+  && chmod 644 ~/.zshrc
+
+gem install github
+source ~/.zshrc
