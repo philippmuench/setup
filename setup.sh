@@ -43,3 +43,13 @@ sudo apt-get -f install
 wget https://download1.rstudio.org/rstudio-1.0.143-amd64.deb \
  && sudo dpkg -i rstudio-1.0.143-amd64.deb \
  && rm rstudio-1.0.143-amd64.deb
+
+# yum and ruby
+sudo apt install yum
+sudo apt-get install ruby-dev
+
+# update R
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
+sudo apt-get update
+sudo apt-get install r-base
