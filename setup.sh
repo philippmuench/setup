@@ -2,6 +2,9 @@
 
 echo "setting up git and GitHub"
 
+sudo apt-get update
+sudo apt-get upgrade
+
 # setup git username
 git config --global user.name "philippmuench"
 
